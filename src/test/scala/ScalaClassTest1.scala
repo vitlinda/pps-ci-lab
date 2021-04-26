@@ -1,0 +1,3 @@
+class ScalaClassTest1 {
+
+}
