@@ -1,6 +1,0 @@
-main.java
- main
-MyTestClass.java
- MyTestClass
-SimpleListManager.java
- SimpleListManager
