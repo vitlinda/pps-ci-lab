@@ -1,4 +1,4 @@
-name: Check gradle
+name: Check Gradle
 on:
   push:
 jobs:
@@ -9,8 +9,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - uses: joschi/setup-jdk@v2.3.0
+      - name: JDK
+        uses: joschi/setup-jdk@v2.3.0
         with:
-          java-version: 8
+          java-version: 15
       - name: Build
         run: ./gradlew check
