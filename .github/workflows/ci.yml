@@ -1,4 +1,4 @@
-name: Check Gradle
+name: Test Workflow
 on:
   push:
 jobs:
@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: JDK
+      - name: Install JDK
         uses: joschi/setup-jdk@v2.3.0
         with:
           java-version: 15
