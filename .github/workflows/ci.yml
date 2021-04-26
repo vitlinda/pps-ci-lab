@@ -1,0 +1,16 @@
+name: Test Workflow
+on:
+  push:
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    env:
+      TERM: dumb
+    steps:
+      - name: Prova
+        uses: actions/checkout@v2
+      - uses: joschi/setup-jdk@v2.3.0
+        with:
+          java-version: 15
+      - name: Build
+        run: ./gradlew check
