@@ -1,2 +1,6 @@
 ClassTest1.java
  ClassTest1
+main.java
+ main
+MyTestClass.java
+ MyTestClass
