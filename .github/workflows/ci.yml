@@ -1,0 +1,12 @@
+name: TestMioRepo
+on:
+  push:
+jobs:
+  Build:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: JavaInstall
+        uses: sudo apt-get install java:1.8
+      - name: Build
+        uses: ./gradlew check
+
