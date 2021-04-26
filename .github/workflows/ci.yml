@@ -10,5 +10,5 @@ jobs:
         with:
           java-version: 11
       - name: Build
-        uses: ./gradlew check
+        run: ./gradlew check
 
