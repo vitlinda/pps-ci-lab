@@ -1,6 +1,8 @@
-main.java
- main
-MyTestClass.java
- MyTestClass
 SimpleListManager.java
  SimpleListManager
+Main.java
+ Main
+MyTestClass.java
+ MyTestClass
+Coucou.java
+ Coucou
