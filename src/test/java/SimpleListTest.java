@@ -9,7 +9,7 @@ public class SimpleListTest {
         SimpleList classTest1List = new SimpleList();
 
         assertEquals(0, classTest1List.getList().size());
-        classTest1List.addElement(1);
+        classTest1List.addElement("ciao");
         assertEquals(1, classTest1List.getList().size());
 
     }

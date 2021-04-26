@@ -3,13 +3,13 @@ import java.util.List;
 
 public class SimpleList {
 
-    private final List<Integer> list = new LinkedList<>();
+    private final List<String> list = new LinkedList<>();
 
-    public void addElement(final Integer elem) {
+    public void addElement(final String elem) {
         list.add(elem);
     }
 
-    public List<Integer> getList(){
+    public List<String> getList(){
         return list;
     }
 
