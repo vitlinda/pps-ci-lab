@@ -6,7 +6,9 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: JavaInstall
-        uses: sudo apt-get install java:1.8
+        uses: joschi/setup-jdk@v2.3.0
+        with:
+          java-version 11
       - name: Build
         uses: ./gradlew check
 
