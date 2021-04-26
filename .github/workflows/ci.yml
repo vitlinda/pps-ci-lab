@@ -1,16 +1,16 @@
-name: Check Gradle
+name: Check gradle
 on:
-  push: # On every push on any branch
+  push:
 jobs:
-  Build: # Job name
-    runs-on: ubuntu-latest # Operating system selection
-    env: # Environment can be controlled at the job or step level
-      TERM: dumb # Sets the environment variable TERM to "dumb"
+  Build:
+    runs-on: ubuntu-latest
+    env:
+      TERM: dumb
     steps:
-      - name: Checkout # custom name Checkout the repository
-        uses: actions/checkout@v2 # Action implemented in this repository, tag "2"
-      - uses: joschi/setup-jdk@v2.3.0 # Action implemented in repository "joschi/setup-jdk" tag "2.3.0"
-        with: # Actions parameters (action name omitted)
+      - name: Checkout
+        uses: actions/checkout@v2
+      - uses: joschi/setup-jdk@v2.3.0
+        with:
           java-version: 15
       - name: Build
         run: ./gradlew check
