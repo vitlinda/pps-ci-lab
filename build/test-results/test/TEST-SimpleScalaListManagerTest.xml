@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SimpleScalaListManagerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-26T19:08:13" hostname="DESKTOP-GR6SJCL" time="0.23">
+<testsuite name="SimpleScalaListManagerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-26T19:43:39" hostname="DESKTOP-GR6SJCL" time="0.253">
   <properties/>
-  <testcase name="testScala()" classname="SimpleScalaListManagerTest" time="0.23"/>
+  <testcase name="testScala()" classname="SimpleScalaListManagerTest" time="0.253"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
