@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 import java.util.List;
 
-public class SimpleList {
+public class SimpleListManager {
 
     private final List<String> list = new LinkedList<>();
 
