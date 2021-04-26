@@ -13,7 +13,3 @@ dependencies{
 
 
 }
-
-application {
-    mainClassName = "main"
-}

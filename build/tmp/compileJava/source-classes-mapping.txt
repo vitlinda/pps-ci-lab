@@ -1,2 +1,2 @@
-main.java
- main
+ClassTest1.java
+ ClassTest1
