@@ -1,5 +1,7 @@
 main.java
  main
+main/Main.java
+ Main
 MyTestClass.java
  MyTestClass
 SimpleListManager.java
