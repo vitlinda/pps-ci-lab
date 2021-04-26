@@ -4,14 +4,14 @@ on:
 jobs:
   Build:
     runs-on: ubuntu-18.04
-env:
-  TERM: dumb
-  steps:
-    - name: JavaInstall
-  uses: actions/checkout@v2
-    - uses joschi/setup-jdk@v2.3.0
-  with:
-  java-version: 11
-    - name: Build
-  run: ./gradlew check
+    env:
+      TERM: dumb
+    steps:
+      - name: JavaInstall
+        uses: actions/checkout@v2
+      - uses: joschi/setup-jdk@v2.3.0
+        with:
+          java-version: 11
+      - name: Build
+        run: ./gradlew check
 
