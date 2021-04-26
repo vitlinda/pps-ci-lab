@@ -20,3 +20,4 @@ dependencies{
 tasks.named<Test>("test") {
     useJUnitPlatform()
 }
+>>>>>>> vitlinda/develop
