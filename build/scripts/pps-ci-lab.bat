@@ -67,7 +67,7 @@ goto fail
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\pps-ci-lab.jar;%APP_HOME%\lib\commons-io-2.8.0.jar;%APP_HOME%\lib\scala-library-2.12.2.jar
+set CLASSPATH=%APP_HOME%\lib\pps-ci-lab.jar;%APP_HOME%\lib\commons-io-2.8.0.jar;%APP_HOME%\lib\scala-library-2.12.2.jar;%APP_HOME%\lib\junit-4.13.1.jar;%APP_HOME%\lib\hamcrest-core-1.3.jar
 
 
 @rem Execute pps-ci-lab
