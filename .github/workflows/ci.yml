@@ -7,9 +7,10 @@ jobs:
     env:
       TERM: dumb
     steps:
-      - name: Prova
+      - name: Checkout
         uses: actions/checkout@v2
-      - uses: joschi/setup-jdk@v2.3.0
+      - name: Install JDK
+        uses: joschi/setup-jdk@v2.3.0
         with:
           java-version: 15
       - name: Build
