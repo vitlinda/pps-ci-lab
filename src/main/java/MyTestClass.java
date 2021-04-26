@@ -7,4 +7,8 @@ public class MyTestClass {
     public static void sayHello(){
         System.out.println("Hello world");
     }
+
+    public static String sendHello(){
+        return ("Hello world");
+    }
 }
