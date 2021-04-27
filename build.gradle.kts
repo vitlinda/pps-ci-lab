@@ -3,6 +3,7 @@ plugins {
     scala
     application
     groovy
+    kotlin("jvm") version "1.4.32"
 }
 
 repositories {
@@ -17,6 +18,7 @@ dependencies{
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.1")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
+    implementation(kotlin("script-runtime"))
 
 }
 
