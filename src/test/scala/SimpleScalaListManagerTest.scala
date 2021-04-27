@@ -7,6 +7,6 @@ class SimpleScalaListManagerTest {
     val simpleScalaListManager = SimpleScalaListManager(List("a"))
     assertEquals(1, simpleScalaListManager.list.length)
     simpleScalaListManager.addElem("b")
-    assertEquals(2, simpleScalaListManager.list.size)
+    assertEquals(2, simpleScalaListManager.list.length)
   }
 }

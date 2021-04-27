@@ -1,4 +1,0 @@
-SimpleListManagerTest.java
- SimpleListManagerTest
-CoucouJavaTest.java
- CoucouJavaTest

@@ -1,8 +1,0 @@
-CoucouJava.java
- CoucouJava
-Main.java
- Main
-MyTestClass.java
- MyTestClass
-SimpleListManager.java
- SimpleListManager
