@@ -31,7 +31,7 @@ Clone your own fork locally, create `develop`, and push it on your remote copy.
 
 ## Step 4: basic Java build
 
-Each team member, working on `develop`, must create a Java class in the `src/main/java`.
+Each team member, working on `develop`, must create a Java class in the `src/mainJava/java`.
 There must not be any name clash among team members.
 Each member must configure the `build.gradle.kts` file in such a way that `./gradlew clean build` will correctly create a `build` folder with the class files compiled.
 
@@ -54,7 +54,7 @@ The developers must comply, and update their pull request (pushing the changes t
 
 ## Step 7: Scala
 
-Enable the `scala` plugin, and write a source under `src/main/scala`.
+Enable the `scala` plugin, and write a source under `src/mainJava/scala`.
 Interoperate with the Java source by calling Java from Scala.
 
 ## Step 8: testing
