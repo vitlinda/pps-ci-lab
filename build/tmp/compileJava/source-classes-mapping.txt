@@ -1,4 +1,0 @@
-ClassTest1.java
- ClassTest1
-mainJava.java
- mainJava
