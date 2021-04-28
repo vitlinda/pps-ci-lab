@@ -4,7 +4,7 @@ plugins {
     application
     groovy
     kotlin("jvm") version "1.4.32"
-    //jacoco
+    jacoco
 }
 
 repositories {
@@ -25,7 +25,7 @@ dependencies{
 tasks.named<Test>("test") {
     useJUnitPlatform()
 }
-/*
+
 jacoco {
     applyTo(tasks.run.get())
 }
@@ -34,4 +34,3 @@ tasks.register<JacocoReport>("applicationCodeCoverageReport") {
     executionData(tasks.run.get())
     sourceSets(sourceSets.main.get())
 }
-*/
