@@ -4,6 +4,7 @@ plugins {
     application
     groovy
     kotlin("jvm") version "1.4.32"
+    //jacoco
 }
 
 repositories {
@@ -11,17 +12,26 @@ repositories {
 }
 
 dependencies{
+    implementation("junit:junit:4.13.1")
     implementation("commons-io:commons-io:+")
     implementation("org.scala-lang:scala-library:2.12.2")
     implementation("org.codehaus.groovy:groovy-all:2.4.15")
-    implementation("junit:junit:4.13.1")
+    implementation(kotlin("script-runtime"))
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.1")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
-    implementation(kotlin("script-runtime"))
-
 }
 
 tasks.named<Test>("test") {
     useJUnitPlatform()
 }
+/*
+jacoco {
+    applyTo(tasks.run.get())
+}
+
+tasks.register<JacocoReport>("applicationCodeCoverageReport") {
+    executionData(tasks.run.get())
+    sourceSets(sourceSets.main.get())
+}
+*/
