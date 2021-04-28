@@ -22,6 +22,10 @@ dependencies{
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
 }
 
+application {
+    mainClass.set("Main")
+}
+
 tasks.named<Test>("test") {
     useJUnitPlatform()
 }
