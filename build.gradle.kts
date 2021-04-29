@@ -22,9 +22,6 @@ dependencies{
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
 }
 
-application { //Without this, gladle build works,but gradle run not
-    mainClass.set("Main")
-}
 
 tasks.named<Test>("test") {
     useJUnitPlatform()
