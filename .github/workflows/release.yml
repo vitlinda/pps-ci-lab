@@ -1,20 +1,16 @@
 name: "tagged-release"
-
 on:
   push:
     tags:
       - "*"
-
 jobs:
   tagged-release:
     name: "Tagged Release"
     runs-on: "ubuntu-latest"
-
     steps:
       - name: "Build & test"
         run: |
           echo "done!"
-
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           files: |
