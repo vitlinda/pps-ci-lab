@@ -30,6 +30,12 @@ tasks.named<Test>("test") {
     useJUnitPlatform()
 }
 
+tasks.named<Javadoc>("javadoc") {
+    group = "Documentation"
+    description = ("Generate Javadoc")
+    source = sourceSets.main.get().allJava
+}
+
 jacoco {
     applyTo(tasks.run.get())
 }
