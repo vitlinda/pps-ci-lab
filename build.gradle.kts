@@ -5,6 +5,7 @@ plugins {
     groovy
     kotlin("jvm") version "1.4.32"
     jacoco
+    pmd
 }
 
 repositories {
@@ -43,4 +44,11 @@ jacoco {
 tasks.register<JacocoReport>("applicationCodeCoverageReport") {
     executionData(tasks.run.get())
     sourceSets(sourceSets.main.get())
+}
+
+pmd {
+    isConsoleOutput = true
+    toolVersion = "6.21.0"
+    rulesMinimumPriority.set(5)
+    ruleSets = listOf("category/java/errorprone.xml", "category/java/bestpractices.xml")
 }
