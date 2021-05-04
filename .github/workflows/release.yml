@@ -15,7 +15,7 @@ jobs:
         with:
           java-version: 15
       - name: "Build with Gradle"
-        run: ./gradlew build
+        run: ./gradlew clean build
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
