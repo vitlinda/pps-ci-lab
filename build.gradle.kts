@@ -23,6 +23,9 @@ dependencies{
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
 }
 
+application { //Without this, gladle build works,but gradle run not
+    mainClass.set("Main")
+}
 
 tasks.named<Test>("test") {
     useJUnitPlatform()
@@ -41,12 +44,4 @@ jacoco {
 tasks.register<JacocoReport>("applicationCodeCoverageReport") {
     executionData(tasks.run.get())
     sourceSets(sourceSets.main.get())
-}
-
-
-pmd {
-    isConsoleOutput = true
-    toolVersion = "6.21.0"
-    rulesMinimumPriority.set(5)
-    ruleSetConfig = rootProject.resources.text.fromFile("config/pmd/pmd.xml")
 }
