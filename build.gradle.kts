@@ -1,3 +1,6 @@
+import org.gradle.kotlin.dsl.execution.ProgramText.Companion.from
+import org.jetbrains.kotlin.contracts.model.structure.UNKNOWN_COMPUTATION.type
+
 plugins {
     java
     scala
