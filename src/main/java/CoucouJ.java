@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class CoucouJava
+public class CoucouJ
 {
     private String name = "";
 
