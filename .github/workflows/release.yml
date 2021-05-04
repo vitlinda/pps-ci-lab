@@ -10,6 +10,7 @@ jobs:
 
     steps:
       - name: "Build & test"
+        run: ./gradlew build
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
