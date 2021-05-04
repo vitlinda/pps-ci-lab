@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test
 class CoucouScalaTest {
 
   @Test def test(): Unit = {
-    val s = new CoucouJava()
+    val s = new CoucouJ()
     s.setName("Linda")
     assertEquals("Linda", s.getName)
     assertEquals("Salut Linda", s.getMessage)
