@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class CoucouJ
 {
     private String name = "";
@@ -12,7 +9,7 @@ public class CoucouJ
 
     public String getMessage()
     {
-        if(name==""){
+        if(name.isEmpty()){
             return "Salut!";
         }
         return "Salut " + name;
