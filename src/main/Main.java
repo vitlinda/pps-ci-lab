@@ -1,4 +1,4 @@
-package tmp.pippo.plutp.paperinp;
+package tmp;
 
 //commento per Linda
 //commento 2
@@ -7,5 +7,3 @@ class Main {
         System.out.println("Hello World!");
     }
 }
-
-// tmp.main

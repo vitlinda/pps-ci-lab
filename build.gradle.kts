@@ -6,6 +6,7 @@ plugins {
     kotlin("jvm") version "1.4.32"
     jacoco
     pmd
+//    checkstyle
 }
 
 repositories {
@@ -22,11 +23,11 @@ dependencies{
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.1")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
 }
-
+/*
 application { //Without this, gladle build works,but gradle run not
-    mainClass.set("Main")
+    mainClass.set("tmp.pippo.plutp.paperinp.Main")
 }
-
+*/
 tasks.named<Test>("test") {
     useJUnitPlatform()
 }
